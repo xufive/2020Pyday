@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# 本代码中的用户名和密码不可用
+# 如需测试，请先在https://urs.earthdata.nasa.gov/home注册账号
+
 import os, re
 import pycurl
 import urllib.parse
@@ -47,12 +50,12 @@ def get_modis_by_pycurl():
     
     url = 'https://urs.earthdata.nasa.gov/login'
     forms = {
-        "username": "linhl",
+        "username": "xufive",
+        "password": "********",
         "redirect_uri": "",
         "commit": "Log+in",
         "client_id": "",
-        "authenticity_token": token,
-        "password": "1234567iI"
+        "authenticity_token": token
     }
     c.setopt(pycurl.POSTFIELDS, urllib.parse.urlencode(forms))
     c.setopt(pycurl.POST, True)

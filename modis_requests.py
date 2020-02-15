@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# 本代码中的用户名和密码不可用
+# 如需测试，请先在https://urs.earthdata.nasa.gov/home注册账号
+
 import re
 from requests import request
 from requests.cookies import RequestsCookieJar
@@ -17,8 +20,8 @@ def get_modis_by_requests():
     jar.update(resp.cookies)
     url = 'https://urs.earthdata.nasa.gov/login'
     forms = {
-        'username': 'linhl', 
-        'password': '1234567iI',
+        'username': 'xufive',
+        'password': '*********',
         'redirect_uri': '', 
         'commit': 'Log+in', 
         'client_id': '', 
