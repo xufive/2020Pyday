@@ -89,16 +89,16 @@ def plot_distribution(mode='lcc', plot_name=True):
     font_11 = FontProperties(fname='res/simsun.ttf', size=11)
     
     if mode in ['etopo', 'shadedrelief', 'bluemarble']:
-        width = 3000
-        height = 1600
+        width = 1600
+        height = 800
         rect = [0, 0, 1, 1]
         lat_min = -90
         lat_max = 90
         lon_min = 0
         lon_max = 360
     else:
-        width = 3000
-        height = 1500
+        width = 1200
+        height = 800
         rect = [0.1, 0.12, 0.8, 0.8]
         lat_min = 0
         lat_max = 60
